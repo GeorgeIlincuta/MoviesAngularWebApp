@@ -1,21 +1,10 @@
-<h2>Movie Data</h2>
-<img 
-    *ngIf="!movies"
-    src="https://mir-s3-cdn-cf.behance.net/project_modules/max_632/04de2e31234507.564a1d23645bf.gif"alt="" />
+<!-- <input type="file" style="display: none;" #uploader />
+<button (click)="uploader.click()">Load File</button> -->
 
-<div *ngIf="movies?.length === 0">
-    There are no records to display
-</div>    
-<div *ngFor="let movie of movies; let index = index" class="movie-container">
-    <div>
-        {{index}}) {{movie.title | lowercase}}
-    </div>
-    
-    <div>
-        {{movie.releaseDate | date:"d-MMMM-y"}}
-    </div>
-    
-    <div>
-        {{movie.price | currency}}
-    </div>
-</div>
+<h2>In Theaters</h2>
+
+<app-movies-list [movies]="moviesInTheaters"></app-movies-list>
+
+<h2>Future Releases</h2>
+
+<app-movies-list [movies]="moviesFutureReleases"></app-movies-list>
