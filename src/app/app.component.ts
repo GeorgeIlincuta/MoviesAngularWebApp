@@ -37,4 +37,8 @@ export class AppComponent implements OnInit {
 
   moviesInTheaters: any;
   moviesFutureReleases: any;
+
+  handleRating(rate: number) {
+    alert(`The user selected ${rate}`);
+  }
 }
