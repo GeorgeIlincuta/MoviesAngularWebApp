@@ -10,29 +10,17 @@ export class AppComponent implements OnInit {
     this.moviesInTheaters = [{
       title: 'Spider-Man',
       releaseDate: new Date(25-3-1998),
-      price: 1400.99
+      price: 1400.99,
+      poster: 'https://m.media-amazon.com/images/M/MV5BZDEyN2NhMjgtMjdhNi00MmNlLWE5YTgtZGE4MzNjMTRlMGEwXkEyXkFqcGdeQXVyNDUyOTg3Njg@._V1_.jpg'
     },
     {
       title: 'Moana',
       releaseDate: new Date(),
-      price: 300.99
+      price: 300.99,
+      poster: 'https://m.media-amazon.com/images/M/MV5BMjI4MzU5NTExNF5BMl5BanBnXkFtZTgwNzY1MTEwMDI@._V1_.jpg'
     }];
 
-    this.moviesFutureReleases = [{
-      title: '300',
-      releaseDate: new Date(),
-      price: 140.99
-    },
-    {
-      title: 'The day after tomorrow',
-      releaseDate: new Date('2-12-2003'),
-      price: 20.99
-    },
-    {
-      title: 'Flying colours',
-      releaseDate: new Date(),
-      price: 110.99
-    }];
+    this.moviesFutureReleases = [];
   }
 
   moviesInTheaters: any;
