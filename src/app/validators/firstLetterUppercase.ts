@@ -10,7 +10,7 @@ export function firstLetterUppercase(): ValidatorFn {
         if (firstLetter !== firstLetter.toUpperCase()) {
             return {
                 firstLetterUppercase : {
-                    message: 'The first letter must be upercase'
+                    message: 'The first letter must be uppercase'
                 }
             }
         }

@@ -20,7 +20,7 @@ export class HomeComponent implements OnInit {
       title: 'Moana',
       releaseDate: new Date(),
       price: 300.99,
-      poster: 'https://m.media-amazon.com/images/M/MV5BMjI4MzU5NTExNF5BMl5BanBnXkFtZTgwNzY1MTEwMDI@._V1_.jpg'
+      poster: 'https://m.media-amazon.com/images/I/A1fsu4+M8cL._AC_SY879_.jpg'
     }];
 
     this.moviesFutureReleases = [];
